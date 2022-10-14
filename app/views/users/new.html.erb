@@ -1,0 +1,21 @@
+<div class="loginbox">
+  <fieldset>
+    <legend>Register a new user</legend>
+    <%= form_for @user, url: { action: :create }, method: :post do |form| %>
+      <div>
+        <%= form.label :name %>
+        <%= form.text_field :name, size: 20 %>
+      </div>
+      <div>
+        <%= form.label :password %>
+        <%= form.password_field :password, size: 20 %>
+      </div>
+      <div>
+        <%= form.label :password_confiration %>
+        <%= form.password_field :password_confirmation, size: 20 %>
+      </div>
+      <%= form.submit 'Register' %>
+    <% end %>
+    </fielset>
+    <%= link_to "Back", :back %>
+</div>

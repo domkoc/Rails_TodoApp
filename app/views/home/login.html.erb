@@ -1,0 +1,13 @@
+<div class="loginbox">
+  <fieldset>
+    <legend>Login</legend>
+    <%= form_tag '/session/create', method: :post do %>
+      <%= label_tag :username %>
+      <%= text_field_tag :username, '', size: 18 %><br>
+      <%= label_tag :password %>
+      <%= text_field_tag :password, '', size: 18 %><br>
+      <%= submit_tag :login %>
+      <%= link_to "Register", '/users/new' %>
+    <% end %>
+  </fieldset>
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsTodoapp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="header">
+        <%= render 'layouts/header' %>
+      </div>
+      <div class="main">
+        <div class="content">
+          <%= yield %>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright , FIBRPN 2022
+      </div>
+    </div>
+  </body>
+</html>
