@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   layout 'guest'
-  def login
-  end
   def index
-    redirect_to home_login_url
+    redirect_to user_session_path
   end
 end
