@@ -1,6 +1,16 @@
-<a>Emlékeztetők</a>
-<div class="menu-items">
-  <%= link_to "Új", '/todos/new'%>
-  <%= link_to "Emlékeztetők", '/todos' %>
-  <%= link_to "Elvégzett", '/todos/done' %>
-</div>
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Emlékeztetők</span>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <%= link_to "Új", '/todos/new', class:'nav-link active'%>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Emlékeztetők", '/todos', class:'nav-link'%>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Elvégzett", '/todos/done', class:'nav-link'%>
+      </li>
+    </ul>
+  </div>
+</nav>
