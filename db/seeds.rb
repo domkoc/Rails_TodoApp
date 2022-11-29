@@ -7,3 +7,5 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 user = User.create email: 'asd@asd.asd', password: 'Ab123456', password_confirmation: 'Ab123456'
+fontosTag = Tag.create name: 'Fontos'
+nemFontosTag = Tag.create name: 'Nem Fontos'
