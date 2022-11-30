@@ -1,13 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+tesztadatok:
+    name: "Teszt adatok"
+    description: "Teszt adatok elkészítése"
+    tags: teszt_elokeszites
+    is_done: true
+    user: dominik
 
-one:
-  name: MyString
-  description: MyString
-  tag: MyString
+tesztiras:
+  name: "Teszteset írás"
+  description: "Tesztesetek megítása"
+  tags: teszt_keszites
   is_done: false
+  user: dominik
 
-two:
-  name: MyString
-  description: MyString
-  tag: MyString
+tesztfuttatas:
+  name: "Teszt futtatás"
+  description: "Tesztek futtatása"
+  tags: teszt_futtatas
   is_done: false
+  user: nemdominik

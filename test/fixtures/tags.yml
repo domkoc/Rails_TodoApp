@@ -1,7 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+teszt_elokeszites:
+  name: "Teszt előkészítés"
 
-two:
-  name: MyString
+teszt_keszites:
+  name: "Teszt készítés"
+
+teszt_futtatas:
+  name: "Teszt futtatás"
