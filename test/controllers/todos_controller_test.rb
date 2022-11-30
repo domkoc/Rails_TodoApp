@@ -1,18 +1,10 @@
 require "test_helper"
 
 class TodosControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
-    @todo = todos(:one)
-  end
-
-  test "should get index" do
-    get todos_url
-    assert_response :success
-  end
-
-  test "should get new" do
-    get new_todo_url
-    assert_response :success
+    @todo = todos(:tesztiras)
+    sign_in users(:dominik)
   end
 
   test "should create todo" do
@@ -21,6 +13,16 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to todo_url(Todo.last)
+  end
+
+  test "should get index" do
+    get todos_path
+    assert_response :success
+  end
+
+  test "should get new" do
+    get new_todo_path
+    assert_response :success
   end
 
   test "should show todo" do
