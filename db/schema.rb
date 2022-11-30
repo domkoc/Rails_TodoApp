@@ -27,8 +27,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_29_182139) do
     t.string "description"
     t.string "tag"
     t.boolean "is_done"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_todos_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", force: :cascade do |t|
